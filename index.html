@@ -208,7 +208,9 @@
 
         try {
           const KEY = "AIzaSyDhiDgjEXZUDWo4qafc_jPJj-PzIJL5Tms"; // <--- COLOQUE SUA CHAVE AQUI
-          const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${KEY}`;
+          
+          // === URL CORRIGIDA PARA O GEMINI 2.5 FLASH ===
+          const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${KEY}`;
           
           const response = await fetch(url, {
             method:"POST",
