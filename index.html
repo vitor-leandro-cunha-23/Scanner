@@ -337,7 +337,7 @@
     function SSelect(props) { return <select {...props} style={{width:"100%", padding:12, background:C.bg, border:`1px solid ${C.border}`, borderRadius:10, color:C.text, marginBottom:15}} /> }
     function IconBtn({children, onClick, color}) { return <button onClick={onClick} style={{width:35, height:35, borderRadius:8, background:C.card2, border:`1px solid ${color==='danger'?C.danger:C.border}`, color:color==='danger'?C.danger:C.text, cursor:"pointer"}}>{children}</button> }
     function Empty({icon, text}) { return <div style={{textAlign:"center", padding:50, color:C.muted}}><div style={{fontSize:40}}>{icon}</div><div>{text}</div></div> }
-    function Spinner() { return <div style={{width:30, height:30, border:`3px solid ${C.border}`, borderTopColor:C.accent, borderRadius:"50%", animation:"spin 1s linear infinite", margin:"0 auto"}} /><style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style> }
+    function Spinner() { return <><div style={{width:30, height:30, border:`3px solid ${C.border}`, borderTopColor:C.accent, borderRadius:"50%", animation:"spin 1s linear infinite", margin:"0 auto"}} /><style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style></> }
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
